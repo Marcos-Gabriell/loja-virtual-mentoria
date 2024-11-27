@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class LojaVirutalMentoriaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LojaVirutalMentoriaApplication.class, args);
+		System.out.println( "Hello World!" );
 	}
 
 }
