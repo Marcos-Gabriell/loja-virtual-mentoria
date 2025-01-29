@@ -8,6 +8,7 @@ public class LojaVirutalMentoriaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LojaVirutalMentoriaApplication.class, args);
+		a
 	}
 
 }
