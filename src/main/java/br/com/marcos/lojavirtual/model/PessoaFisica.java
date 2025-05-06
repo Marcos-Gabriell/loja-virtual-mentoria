@@ -1,8 +1,7 @@
 package br.com.marcos.lojavirtual.model;
 
-
-
 import java.util.Date;
+
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,21 +10,22 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-@Entity
-@Table(name = "pessioa_fisica")
-@PrimaryKeyJoinColumn(name = "id")
-public class PessoaFisica extends Pessoa{
 
-	
+@Entity
+@Table(name = "pessoa_fisica")
+@PrimaryKeyJoinColumn(name = "id")
+public class PessoaFisica extends Pessoa {
+
+
 	private static final long serialVersionUID = 1L;
 
-	
+
 	@Column(nullable = false)
 	private String cpf;
-	
-	
+
+
 	@Temporal(TemporalType.DATE)
-	private Date dataNasciemneto;
+	private Date dataNascimento;
 
 
 	public String getCpf() {
@@ -38,14 +38,14 @@ public class PessoaFisica extends Pessoa{
 	}
 
 
-	public Date getDataNasciemneto() {
-		return dataNasciemneto;
+	public Date getDataNascimento() {
+		return dataNascimento;
 	}
 
 
-	public void setDataNasciemneto(Date dataNasciemneto) {
-		this.dataNasciemneto = dataNasciemneto;
+	public void setDataNascimento(Date dataNascimento) {
+		this.dataNascimento = dataNascimento;
 	}
-	
-	
+
+
 }
